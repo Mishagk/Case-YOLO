@@ -1,7 +1,7 @@
-# Local environment and editor settings
+# Local environment and editor configuration
 .venv/
 .vscode/
 
-# Model files (downloaded automatically by the notebook; too large for GitHub)
+# Model files
 *.pt
 *.ts
