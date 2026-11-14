@@ -2,6 +2,13 @@
 .venv/
 .vscode/
 
-# Model files (downloaded automatically by the notebook; too large for GitHub)
+# Model files (downloaded automatically by the notebooks; too large for GitHub)
 *.pt
 *.ts
+
+# Files created by the notebooks (videos, tables, saved models)
+outputs/
+
+# Files created by the export notebook
+*.onnx
+*.torchscript

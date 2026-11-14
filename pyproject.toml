@@ -1,15 +1,21 @@
 [project]
 name = "case-yolo"
 version = "0.1.0"
-description = "Compare YOLO26n (fixed classes) with YOLOE-26n (text prompts) on two photos."
+description = "Learning notebooks: YOLO and YOLOE on photos and video, tracking, custom layers, export and compliance."
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "clip",
     "ipykernel==7.4.0",
+    "lap==0.5.13",
     "matplotlib==3.11.2",
     "numpy==2.5.4",
+    "onnx==1.23.2",
+    "onnxruntime==1.31.0",
     "pandas==3.1.0",
     "requests==2.34.2",
+    "scikit-image==0.26.0",
+    "scikit-learn==1.9.1",
+    "shapely==2.2.0",
     "ultralytics==8.4.184",
 ]
 
@@ -20,4 +26,4 @@ package = false
 
 [tool.uv.sources]
 # Ultralytics' copy of OpenAI CLIP, pinned to one commit. The "clip" package on PyPI is an unrelated project.
-clip ={ git = "https://github.com/ultralytics/CLIP.git", rev = "7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40" }
+clip = { git = "https://github.com/ultralytics/CLIP.git", rev = "7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40" }
