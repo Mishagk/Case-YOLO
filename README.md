@@ -9,12 +9,12 @@ IMPORTANT: The main purpose is only personal learning and training in the field 
 # Main structure
 
 The repository is divided into notebook cases:
-- 01_yolo_vs_yoloe.ipynb : Comparison between YOLO and YOLOE for understanding in object detection and segmentation mainly.
-- 02_yolo_video_cars.ipynb : Use of YOLO models for video processing like tracking and many other features from Ultralytics solutions module
-- 03_yolo_tracking_theory.ipynb : Tracking theory and application with Ultralytics models. Main focus on the use of ByteTrack and BoT-SORT for tracking cases.
-- 04_yolo_custom_layers.ipynb : Understanding from zero pytorch formats and then how to add pytorch NN layers in both cases at the end and in the middle to see how performance improves in the overall classifier case.
-- 05_yolo_export_formats.ipynb : Learn and understand main format file for export the model trained like .pt (pytorch), .torchscript, .onnx (open neural network exchange)
-- 06_yolo_compliance_security.ipynb :  understand some main compliance features and security understanding when using Ultralytics models
+- **01_yolo_vs_yoloe.ipynb** : Comparison between YOLO and YOLOE for understanding in object detection and segmentation mainly.
+- **02_yolo_video_cars.ipynb** : Use of YOLO models for video processing like tracking and many other features from Ultralytics solutions module
+- **03_yolo_tracking_theory.ipynb** : Tracking theory and application with Ultralytics models. Main focus on the use of ByteTrack and BoT-SORT for tracking cases.
+- **04_yolo_custom_layers.ipynb** : Understanding from zero pytorch formats and then how to add pytorch NN layers in both cases at the end and in the middle to see how performance improves in the overall classifier case.
+- **05_yolo_export_formats.ipynb** : Learn and understand main format file for export the model trained like .pt (pytorch), .torchscript, .onnx (open neural network exchange)
+- **06_yolo_compliance_security.ipynb** :  understand some main compliance features and security understanding when using Ultralytics models
 
 Some output examples to be found in the notebooks:
 
