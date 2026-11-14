@@ -47,34 +47,42 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "clip" },
+    { name = "graphviz" },
     { name = "ipykernel" },
     { name = "lap" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "onnx" },
     { name = "onnxruntime" },
+    { name = "onnxscript" },
     { name = "pandas" },
     { name = "requests" },
     { name = "scikit-image" },
     { name = "scikit-learn" },
     { name = "shapely" },
+    { name = "torchinfo" },
+    { name = "torchview" },
     { name = "ultralytics" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "clip", git = "https://github.com/ultralytics/CLIP.git?rev=7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40" },
+    { name = "graphviz", specifier = ">=0.21" },
     { name = "ipykernel", specifier = "==7.4.0" },
     { name = "lap", specifier = "==0.5.13" },
     { name = "matplotlib", specifier = "==3.11.2" },
     { name = "numpy", specifier = "==2.5.4" },
     { name = "onnx", specifier = "==1.23.2" },
     { name = "onnxruntime", specifier = "==1.31.0" },
+    { name = "onnxscript", specifier = ">=0.7.2" },
     { name = "pandas", specifier = "==3.1.0" },
     { name = "requests", specifier = "==2.34.2" },
     { name = "scikit-image", specifier = "==0.26.0" },
     { name = "scikit-learn", specifier = "==1.9.1" },
     { name = "shapely", specifier = "==2.2.0" },
+    { name = "torchinfo", specifier = ">=1.8.0" },
+    { name = "torchview", specifier = ">=0.2.7" },
     { name = "ultralytics", specifier = "==8.4.184" },
 ]
 
@@ -365,6 +373,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a5/d3/8650919bc3c7c6e90ee3fa7fd618bf373cbbe55dff043bd67353dbb20cd8/ftfy-6.3.1.tar.gz", hash = "sha256:9b3c3d90f84fb267fe64d375a07b7f8912d817cf86009ae134aa03e1819506ec", size = 308927, upload-time = "2024-10-26T00:50:35.149Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/6e/81d47999aebc1b155f81eca4477a616a70f238a2549848c38983f3c22a82/ftfy-6.3.1-py3-none-any.whl", hash = "sha256:7c70eb532015cd2f9adb53f101fb6c7945988d023a085d127d1573dc49dd0083", size = 44821, upload-time = "2024-10-26T00:50:33.425Z" },
+]
+
+[[package]]
+name = "graphviz"
+version = "0.21"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/b3/3ac91e9be6b761a4b30d66ff165e54439dcd48b83f4e20d644867215f6ca/graphviz-0.21.tar.gz", hash = "sha256:20743e7183be82aaaa8ad6c93f8893c923bd6658a04c32ee115edb3c8a835f78", size = 200434, upload-time = "2025-06-15T09:35:05.824Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/4c/e0ce1ef95d4000ebc1c11801f9b944fa5910ecc15b5e351865763d8657f8/graphviz-0.21-py3-none-any.whl", hash = "sha256:54f33de9f4f911d7e84e4191749cac8cc5653f815b06738c54db9a15ab8b1e42", size = 47300, upload-time = "2025-06-15T09:35:04.433Z" },
 ]
 
 [[package]]
@@ -920,6 +937,23 @@ wheels = [
 ]
 
 [[package]]
+name = "onnx-ir"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ml-dtypes" },
+    { name = "numpy" },
+    { name = "onnx" },
+    { name = "packaging" },
+    { name = "sympy" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/31/9c/19dee739ae9a7c647ab16fdb990da1b73abe9aa604c4e3c5c30138acc693/onnx_ir-1.1.0.tar.gz", hash = "sha256:b72176de575d820ec26864d17270d58ef886a7cf64db7649d15fcc3d5ae2a8ee", size = 169010, upload-time = "2026-10-20T19:40:42.215Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/eb/80/1a63440081d94e25b96be6b29119f41119fe5c9521063edbdb7baeeb9589/onnx_ir-1.1.0-py3-none-any.whl", hash = "sha256:76cc313a788c073b75271c1b6abb172aaf90fcc6335ed40f9f3238b2064a2fa3", size = 192241, upload-time = "2026-10-20T19:40:40.651Z" },
+]
+
+[[package]]
 name = "onnxruntime"
 version = "1.31.0"
 source = { registry = "https://pypi.org/simple" }
@@ -935,6 +969,23 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/6c/44/1e9e762b95b7da0a8424913a1ed7c38cdaf88624a3c41ddba24ebac88bc9/onnxruntime-1.31.0-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:5e129d6c56abd53e659cb70f00a108d6824086470ff99c2e47a82e5786563db3", size = 23760984, upload-time = "2026-10-09T04:18:24.61Z" },
     { url = "https://files.pythonhosted.org/packages/be/ed/b12cea136ccd7b03d924f46b8393faf7ceac21115c0c50e729faa248cf23/onnxruntime-1.31.0-cp312-cp312-win_amd64.whl", hash = "sha256:09d56445c1753e66e0912de69d3f0184016ad9a191dcd6925bf5dd570d2bfbe5", size = 14888841, upload-time = "2026-10-09T04:18:27.62Z" },
     { url = "https://files.pythonhosted.org/packages/02/ad/37bbc51dcb5cd105c5b2fe98f122b23e90171c2719516964edc65bb1d4cc/onnxruntime-1.31.0-cp312-cp312-win_arm64.whl", hash = "sha256:5c54a0eb7b2b4eef3eb9dcfaf82f5ce880db07288dc309574f6657e9da5cc754", size = 14740604, upload-time = "2026-10-09T04:18:30.399Z" },
+]
+
+[[package]]
+name = "onnxscript"
+version = "0.7.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ml-dtypes" },
+    { name = "numpy" },
+    { name = "onnx" },
+    { name = "onnx-ir" },
+    { name = "packaging" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0a/01/3e3fab8d643ca097ea4aa9e51246643699dfaaa0650589744fe44bc46651/onnxscript-0.7.2.tar.gz", hash = "sha256:2c664f6383d10f332a4d47b2876dcab16dba84909fe703656b19abc281fda165", size = 646719, upload-time = "2026-09-09T17:06:44.567Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b9/3b/06260997cdc41138e58718588a6c87d0eb342bbe0dda8a6aae91d163c384/onnxscript-0.7.2-py3-none-any.whl", hash = "sha256:d0e7121c6a1eefd608058928e111cbdb76709f70d269ff0d07aee493bd1d13c9", size = 754215, upload-time = "2026-09-09T17:06:46.442Z" },
 ]
 
 [[package]]
@@ -1425,6 +1476,27 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a4/3e/474930ab971e306957ec763b7df695d659179e15ccab9e7073d47ae14ce8/torch-2.14.1-cp312-cp312-manylinux_2_28_aarch64.whl", hash = "sha256:0b13acde294b401509830d85a8906cbf2fc97425a12a66cce1d9fa13c5106a2a", size = 453998918, upload-time = "2026-09-30T17:52:45.134Z" },
     { url = "https://files.pythonhosted.org/packages/ba/fd/c470857d0dfc5d4c94430658b3eed60fd5292b0bf596a8aae7b9fd66d674/torch-2.14.1-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:23011fe29a99b591eabb3a31a25080c62e2c2f0690a3c798744e5489dae50451", size = 554618695, upload-time = "2026-09-30T17:53:06.8Z" },
     { url = "https://files.pythonhosted.org/packages/ad/1a/b9648b0d228e513f69f8453ec3f90a8d436d78ff6d85a2773e539f0c07cf/torch-2.14.1-cp312-cp312-win_amd64.whl", hash = "sha256:38bee9f2a2ccfc6898172a5075e4ba52522fbe143eeb099674fc67ab390e858d", size = 124113906, upload-time = "2026-09-30T17:52:21.377Z" },
+]
+
+[[package]]
+name = "torchinfo"
+version = "1.8.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/53/d9/2b811d1c0812e9ef23e6cf2dbe022becbe6c5ab065e33fd80ee05c0cd996/torchinfo-1.8.0.tar.gz", hash = "sha256:72e94b0e9a3e64dc583a8e5b7940b8938a1ac0f033f795457f27e6f4e7afa2e9", size = 25880, upload-time = "2023-05-14T19:23:26.377Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/25/973bd6128381951b23cdcd8a9870c6dcfc5606cb864df8eabd82e529f9c1/torchinfo-1.8.0-py3-none-any.whl", hash = "sha256:2e911c2918603f945c26ff21a3a838d12709223dc4ccf243407bce8b6e897b46", size = 23377, upload-time = "2023-05-14T19:23:24.141Z" },
+]
+
+[[package]]
+name = "torchview"
+version = "0.2.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "graphviz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f0/45/f76ac5a2a49f3a5831ddde2e7e6b58fe423b434075e812559976a2122560/torchview-0.2.7.tar.gz", hash = "sha256:c5898fd03d256333c9827000c1f83e1052fbcfc1066032d86b30d429dd942f7c", size = 25697, upload-time = "2025-04-22T20:47:27.49Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/17/66/b87d835f664f0f99a0bf1e2e294c45d286545fed35b96f2c99e700915dd9/torchview-0.2.7-py3-none-any.whl", hash = "sha256:c7f3a9d16138c20b606900ecbf46d01489f2b8c77ed97e71293883bc606c2be0", size = 26103, upload-time = "2025-04-22T20:47:26.12Z" },
 ]
 
 [[package]]

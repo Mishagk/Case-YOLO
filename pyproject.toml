@@ -5,17 +5,21 @@ description = "Learning notebooks: YOLO and YOLOE on photos and video, tracking,
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "clip",
+    "graphviz>=0.21",
     "ipykernel==7.4.0",
     "lap==0.5.13",
     "matplotlib==3.11.2",
     "numpy==2.5.4",
     "onnx==1.23.2",
     "onnxruntime==1.31.0",
+    "onnxscript>=0.7.2",
     "pandas==3.1.0",
     "requests==2.34.2",
     "scikit-image==0.26.0",
     "scikit-learn==1.9.1",
     "shapely==2.2.0",
+    "torchinfo>=1.8.0",
+    "torchview>=0.2.7",
     "ultralytics==8.4.184",
 ]
 
