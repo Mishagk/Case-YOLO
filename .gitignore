@@ -9,6 +9,9 @@
 # Files created by the notebooks (videos, tables, saved models)
 outputs/
 
+# Datasets downloaded by the notebooks (CIFAR)
+data/
+
 # Files created by the export notebook
 *.onnx
 *.torchscript
