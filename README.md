@@ -49,3 +49,6 @@ Some output examples to be found in the notebooks:
 
 ### Case 2: Add intermediate layers in the main backbone model:
 <img width="691" height="315" alt="image" src="https://github.com/user-attachments/assets/dfc6177f-0c8b-46af-b50b-f7d6912d35a5" />
+
+## 6) Comparison between ideas and new layers added to the base models
+<img width="793" height="449" alt="image" src="https://github.com/user-attachments/assets/a68cff6b-67c0-4875-aa9d-ac8d5c9d66b7" />
